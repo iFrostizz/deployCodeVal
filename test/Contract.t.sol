@@ -4,9 +4,11 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 
 contract ContractTest is Test {
-    function setUp() external {}
+    function setUp() public {}
 
-    function testExample() external {
-	deployCode{value: 1 ether}("Contract.sol", 1 ether);
+    function testExample() public {
+	vm.deal(address(this), 1 ether);
+	address addr = deployCode("Contract.sol", 1 ether);
+	assertEq(addr.balance, 1 ether);
     }
 }

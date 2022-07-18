@@ -92,8 +92,8 @@
       }
     },
     "lib/forge-std/src/Test.sol": {
-      "lastModificationDate": 1658135842927,
-      "contentHash": "bc8b62444227c339153e1198116d79ba",
+      "lastModificationDate": 1658144615483,
+      "contentHash": "7dcdba8cc1b7fd55544b7ba3f495d9c5",
       "sourceName": "lib/forge-std/src/Test.sol",
       "solcConfig": {
         "settings": {
@@ -302,8 +302,8 @@
       }
     },
     "src/Contract.sol": {
-      "lastModificationDate": 1658135977658,
-      "contentHash": "204b991e8ed08fa9a2982e4bbef6d84f",
+      "lastModificationDate": 1658144642831,
+      "contentHash": "c0ddee901f9669a0a06cfb1e982b7692",
       "sourceName": "src/Contract.sol",
       "solcConfig": {
         "settings": {
@@ -331,7 +331,14 @@
           "libraries": {}
         }
       },
-      "imports": [],
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "Contract": {
@@ -340,8 +347,8 @@
       }
     },
     "test/Contract.t.sol": {
-      "lastModificationDate": 1658135906686,
-      "contentHash": "8bfaf2676ba43d12586ab718b18a13fc",
+      "lastModificationDate": 1658144511636,
+      "contentHash": "0e719134c5411127fd8b2ab92b7d947c",
       "sourceName": "test/Contract.t.sol",
       "solcConfig": {
         "settings": {

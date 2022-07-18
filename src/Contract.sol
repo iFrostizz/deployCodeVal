@@ -1,10 +1,16 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-contract Contract {
+import "forge-std/Test.sol";
+
+contract Contract is Test {
     constructor() payable {
-	require(msg.value > 1 ether);
+	emit log("before");
+	require(msg.value >= 1 ether);
+	emit log("after");
     }
 
     receive() external payable {}
+
+    fallback() external payable {}
 }
