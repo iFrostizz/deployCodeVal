@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 contract Contract {
-    constructor() public payable {
+    constructor() payable {
 	require(msg.value > 1 ether);
     }
 
